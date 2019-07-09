@@ -55,8 +55,8 @@ public class PrimeNumberController extends BaseController{
         }
         else{
             throw new UnsupportedOperationException("Algorithm type is not supported." +
-                    " You can choose one of: 'TrialDivisionGenerator', 'SieveGenerator'," +
-                    " 'MillerRabinGenerator'");
+                    " You can choose one of: 'trial', 'sieve'," +
+                    " 'miller'");
         }
          long timeAfter = System.currentTimeMillis();
          long timeElapsed = timeAfter - timeBefore;
