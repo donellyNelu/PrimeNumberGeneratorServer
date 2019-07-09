@@ -39,17 +39,17 @@ public class PrimeNumberController extends BaseController{
 
         if (requests.getAlgorithmType().equalsIgnoreCase("trial"))
         {
-            ArrayList<Integer> primes = new TrialDivisionGenerator().generate(lowerLimit,upperLimit);
+            ArrayList<Integer> primes = new TrialDivisionGenerator().generatePrime(lowerLimit,upperLimit);
             result.addAll(primes);
         }
         else if(requests.getAlgorithmType().equalsIgnoreCase("sieve"))
         {
-            ArrayList<Integer> primes = new SieveGenerator().generate(lowerLimit,upperLimit);
+            ArrayList<Integer> primes = new SieveGenerator().generatePrime(lowerLimit,upperLimit);
             result.addAll(primes);
         }
         else if (requests.getAlgorithmType().equalsIgnoreCase("miller"))
         {
-            ArrayList<Integer> primes = new MillerRabinGenerator().generate(lowerLimit,upperLimit);
+            ArrayList<Integer> primes = new MillerRabinGenerator().generatePrime(lowerLimit,upperLimit);
             result.addAll(primes);
 
         }

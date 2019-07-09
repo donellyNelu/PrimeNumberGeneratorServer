@@ -22,7 +22,7 @@ public class MillerRabinGeneratorTest {
     @SuppressWarnings("Duplicates")
     public void generate() throws Exception {
         System.out.println("Test for numbers from 1 to 20");
-        ArrayList<Integer> actual = millerRabinGenerator.generate(1, 20);
+        ArrayList<Integer> actual = millerRabinGenerator.generatePrime(1, 20);
         List<Integer> expected = new ArrayList<>(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));
 
         assertEquals(expected,actual);
@@ -37,7 +37,7 @@ public class MillerRabinGeneratorTest {
     @SuppressWarnings("Duplicates")
     public void generate2()throws Exception{
         System.out.println("Test for numbers from 2361 to 2533");
-        ArrayList<Integer> actual = millerRabinGenerator.generate(2361, 2533);
+        ArrayList<Integer> actual = millerRabinGenerator.generatePrime(2361, 2533);
         List<Integer> expected =  new ArrayList<>(Arrays.asList(2371, 2377, 2381, 2383, 2389, 2393, 2399, 2411, 2417, 2423, 2437, 2441, 2447, 2459, 2467, 2473, 2477, 2503, 2521, 2531));
 
         assertEquals(expected,actual);
@@ -52,7 +52,7 @@ public class MillerRabinGeneratorTest {
     @SuppressWarnings("Duplicates")
     public void generate3()throws Exception{
         System.out.println("Test for numbers from -10 to 10");
-        ArrayList<Integer> actual = millerRabinGenerator.generate(-10,10);
+        ArrayList<Integer> actual = millerRabinGenerator.generatePrime(-10,10);
         List<Integer> expected = new ArrayList<>(Arrays.asList(2, 3, 5, 7));
 
         assertEquals(expected,actual);
@@ -67,7 +67,7 @@ public class MillerRabinGeneratorTest {
     @SuppressWarnings("Duplicates")
     public void generate4()throws Exception{
         System.out.println("Test for numbers from -10 to 0");
-        ArrayList<Integer> actual = millerRabinGenerator.generate(-20,0);
+        ArrayList<Integer> actual = millerRabinGenerator.generatePrime(-20,0);
         List<Integer> expected = new ArrayList<>(Collections.emptyList());
 
         assertEquals(expected,actual);

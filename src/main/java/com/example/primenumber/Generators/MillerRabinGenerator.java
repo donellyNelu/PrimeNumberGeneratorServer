@@ -14,7 +14,7 @@ public class MillerRabinGenerator implements PrimeNumberGeneratorInterface {
 
     @Override
     @SuppressWarnings("Duplicates")
-    public ArrayList<Integer> generate(int lowerLimit, int upperLimit) {
+    public ArrayList<Integer> generatePrime(int lowerLimit, int upperLimit) {
         ArrayList<Integer> result = new ArrayList<>();
         // change start to 2 if it is less than 2.
         lowerLimit = lowerLimit < 2 ? 2 : lowerLimit;

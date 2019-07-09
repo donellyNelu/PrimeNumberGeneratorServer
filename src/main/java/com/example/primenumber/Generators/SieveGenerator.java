@@ -11,7 +11,7 @@ public class SieveGenerator implements PrimeNumberGeneratorInterface {
 
 
     @Override
-    public ArrayList<Integer> generate(int lowerLimit, int upperLimit) {
+    public ArrayList<Integer> generatePrime(int lowerLimit, int upperLimit) {
         ArrayList<Integer> result = new ArrayList<>();
 
         lowerLimit = lowerLimit < 2 ? 2 : lowerLimit;

@@ -13,7 +13,7 @@ public class TrialDivisionGenerator implements PrimeNumberGeneratorInterface {
 
     @Override
     @SuppressWarnings("Duplicates")
-    public ArrayList<Integer> generate(int lowerLimit, int upperLimit) {
+    public ArrayList<Integer> generatePrime(int lowerLimit, int upperLimit) {
         ArrayList<Integer> result = new ArrayList<>();
 
         // change lower limit to 2 if is less than 2.
